@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: repochatai
+    runtime: static
+    repo: https://github.com/roshnidevi5390-debug/Repochatai
+    buildCommand: 
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=31536000
